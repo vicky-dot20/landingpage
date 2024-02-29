@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    background-color: black;
+  }
+}
+
+body {
+  background-color: rgba(1, 2, 14, 1);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  background-color: #242636;
+  height: 60px;
+  justify-content: space-between;
+  padding-left: 40px;
+  color: #fff;
+  padding-right: 40px;
+}
+.login-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Poppins";
+  color: #fff;
+  margin-right: 10px;
+}
+.get-started-button {
+  background-color: #0057ff;
+  padding: 7px;
+  border: none;
+  font-family: "Poppins";
+  width: 80%;
+  height: 36px;
+  font-size: 16px;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.get-started-button:hover {
+  background-color: #144dc0;
+}
+.logo-heading {
+  font-size: 28px;
+  margin: 0px;
+}
+.logo-img {
+  width: 49px;
+  height: 28px;
+}
+@media screen and (max-width: 575px) {
+  .nav-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .logo-img {
+    width: 35px;
+    height: 20px;
+  }
+  .logo-heading {
+    font-size: 20px;
+  }
+  .login-button {
+    margin-right: 5px;
+  }
+  .get-started-button {
+    font-size: 14px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .login-button {
+    width: 100px;
+    font-size: 20px;
+  }
+}
+
+.linear {
+  background: rgb(64, 70, 130);
+}
+
+.fontpop {
+  font-family: "Poppins";
+}
+.navbg {
+  background-color: linear-gradient(
+    180deg,
+    #242636 -176.82%,
+    rgba(66, 76, 95, 0) 110.5%
+  );
+}
+
+
+
+
+.text-gradient {
+  background-image: linear-gradient(182.23deg, #FFFFFF 1.87%, rgba(65, 65, 65, 0.38) 89.07%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.td-figure{
+  perspective: 78px;
+}
+.box{
+  transform: rotateX(45deg);
+}
+
+.hovercardbg{
+  background-color:  #191926;
+  ;
+}
+
+.custom-border {
+  border: 1px solid;
+  border-color:  rgba(130, 130, 130, 0.4) 
+}
